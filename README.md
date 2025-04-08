@@ -1,6 +1,6 @@
 # Auth App GraphQL API
 
-This is a RESTful API for managing artist profiles, event listings, and booking transactions in a music booking application.
+This GraphQL API provides user authentication with support for email/password registration, traditional login, and biometric login. Each mutation returns a UserModel containing userId, name, email, and optional biometricKey.
 
 ## 🛠️ Setup Instructions
 
@@ -19,9 +19,9 @@ Ensure you have the `.env` file in the root directory, check slack message.
 npm install
 ```
 
-### 4️⃣ Generate Prisma Client
+### 4️⃣ Sync Prisma Schema with DB & Generate Prisma Client
 ```sh
-npx prisma generate
+npx prisma db push 
 ```
 
 ### 5️⃣ Start the Development Server
