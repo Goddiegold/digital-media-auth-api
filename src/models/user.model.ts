@@ -17,5 +17,5 @@ export class UserModel {
   biometricKey?: string;
 
   @Field()
-  string: string;
+  token: string;
 }

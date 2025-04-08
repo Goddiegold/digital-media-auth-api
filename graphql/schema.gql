@@ -7,7 +7,7 @@ type UserModel {
   name: String!
   email: String!
   biometricKey: String
-  string: String!
+  token: String!
 }
 
 type Query {

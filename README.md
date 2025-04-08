@@ -44,6 +44,8 @@ Once the server starts, you should see:
 Application is running on: http://localhost:6000
 ```
 
+The GraphQL schema will be automatically generated and saved in a folder named `graphql` located at the root of the project directory.
+
 ### 7️⃣ Run Unit Tests
 ```sh
 npm run test
