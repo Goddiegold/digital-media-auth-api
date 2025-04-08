@@ -11,14 +11,15 @@ import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      autoSchemaFile: true,
-      playground:false, 
+      // autoSchemaFile: true,
+      autoSchemaFile: 'src/schema.gql',
+      playground: false,
       plugins: [ApolloServerPluginLandingPageLocalDefault()],
-    }), 
-    UserModule, 
-    AuthModule, 
+    }),
+    UserModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }

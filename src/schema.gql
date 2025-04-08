@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserModel {
+  userId: String!
+  name: String!
+  email: String!
+  biometricKey: String
+  string: String!
+}
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  register(email: String!, password: String!, name: String!): UserModel!
+  login(email: String!, password: String!): UserModel!
+  loginWithBiometricKey(biometricKey: String!): UserModel!
+}
