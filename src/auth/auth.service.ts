@@ -51,7 +51,7 @@ export class AuthService {
       return {
         userId: userExists?.userId,
         email: userExists?.email,
-        name: userExists?.email,
+        name: userExists?.name,
         token: this.jwtService.sign({ userId: userExists?.userId })
       };
     } catch (error) {
